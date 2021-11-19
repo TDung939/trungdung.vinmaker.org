@@ -25,51 +25,27 @@ export const links = [
     ],
   },
   {
-    title: 'Resources',
+    title: 'More stuff',
     links: [
       {
-        label: 'Learn Center',
+        label: 'My music',
         href: '#',
       },
       {
-        label: 'Support',
+        label: 'Free Life Tips',
         href: '#',
-      },
-      {
-        label: 'Slack Community',
-        href: '#',
-      },
-      {
-        label: 'Events',
-        href: '#',
-      },
-      {
-        label: 'Terms of Service',
-        href: '#',
-      },
-      {
-        label: 'Privacy Policy',
-        href: '#',
-      },
+      }
     ],
   },
   {
-    title: 'About',
+    title: 'Support',
     links: [
       {
-        label: 'Our Story',
+        label: 'Makers for Kindness',
         href: '#',
       },
       {
-        label: 'Media Kit',
-        href: '#',
-      },
-      {
-        label: 'Blog',
-        href: '#',
-      },
-      {
-        label: 'Email us',
+        label: 'Buy me a coffee',
         href: '#',
       },
     ],
@@ -90,27 +66,5 @@ export const socialLinks = [
     label: 'Github',
     icon: <FaGithub />,
     href: 'https://github.com/TDung939',
-  },
-]
-export const footerLinks = [
-  {
-    label: 'Terms of Service',
-    href: '#',
-  },
-  {
-    label: 'Privacy Policy',
-    href: '#',
-  },
-  {
-    label: 'Offer terms',
-    href: '#',
-  },
-  {
-    label: 'Legal notice',
-    href: '#',
-  },
-  {
-    label: 'Sitemap',
-    href: '#',
   },
 ]
