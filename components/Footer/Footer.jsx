@@ -13,6 +13,7 @@ import { FaHeart } from 'react-icons/fa'
 import { SocialLink } from './SocialLink'
 import { links, socialLinks } from './_data'
 import { LinkGroup } from './LinkGroup'
+import NowPlaying from '../NowPlaying'
 
 export default function Footer() {
   return (
@@ -20,6 +21,7 @@ export default function Footer() {
       <Box
         py='8'
       >
+        <NowPlaying/>
         <Flex
           direction={{
             base: 'column',

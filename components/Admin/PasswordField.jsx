@@ -3,12 +3,9 @@ import {
     Flex,
     FormControl,
     FormLabel,
-    IconButton,
     Input,
     InputGroup,
-    InputRightElement,
     useDisclosure,
-    useMergeRefs,
     useColorModeValue as mode,
     Modal,
     ModalOverlay,
@@ -20,7 +17,6 @@ import {
     Button
 } from '@chakra-ui/react'
 import * as React from 'react'
-import { HiEye, HiEyeOff } from 'react-icons/hi'
   
 export const PasswordField = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
