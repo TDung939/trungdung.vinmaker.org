@@ -79,17 +79,17 @@ export const socialLinks = [
   {
     label: 'Facebook',
     icon: <FaFacebook />,
-    href: '#',
+    href: 'https://www.facebook.com/dung.nguyenhoangtrung',
   },
   {
     label: 'LinkedIn',
     icon: <FaLinkedin />,
-    href: '#',
+    href: 'https://www.linkedin.com/in/dung-nht/',
   },
   {
     label: 'Github',
     icon: <FaGithub />,
-    href: '#',
+    href: 'https://github.com/TDung939',
   },
 ]
 export const footerLinks = [
