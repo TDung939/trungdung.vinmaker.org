@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   IconButton,
   Flex,
   HStack,
@@ -11,45 +10,32 @@ import * as React from 'react'
 import { MobileNav } from './MobileNav'
 import { NavLink } from './NavLink'
 import { HiMoon, HiSun } from 'react-icons/hi'
+import { useState } from 'react'
 
 export default function NavBar() {
-  const { colorMode, toggleColorMode } = useColorMode()
+  const { colorMode, toggleColorMode } = useColorMode();
+  const [page, setPage] = useState('home')
+
   return (
-    <Box minH="480px">
-      <Box as="header" bg='transparent' borderBottomWidth="1px">
-        <Box
-          maxW="7xl"
-          mx="auto"
-          py="4"
-          px={{
-            base: '6',
-            md: '8',
-          }}
-        >
-          <Flex as="nav" justify="space-between">
-            <HStack spacing="8">
-              <HStack
-                display={{
-                  base: 'none',
-                  lg: 'flex',
-                }}
-                spacing="8"
-              >
-                <NavLink.Desktop active>Home</NavLink.Desktop>
-                <NavLink.Desktop>Projects</NavLink.Desktop>
-                <NavLink.Desktop>Blog</NavLink.Desktop>
-                <NavLink.Desktop>Contact</NavLink.Desktop>
-              </HStack>
+    <Box as="header" bg='transparent' borderBottomWidth="1px" py="4">
+        <Flex as="nav" justify="space-between">
+            <HStack
+              display={{
+                base: 'none',
+                lg: 'flex',
+              }}
+              spacing="8"
+            >
+              <NavLink.Desktop onClick={() => setPage('home')} active={page==='home'? true : false}>Home</NavLink.Desktop>
+              <NavLink.Desktop onClick={() => setPage('projects')} active={page==='projects'? true : false}>Projects</NavLink.Desktop>
+              <NavLink.Desktop onClick={() => setPage('blog')} active={page==='blog'? true : false}>Blog</NavLink.Desktop>
+              <NavLink.Desktop onClick={() => setPage('contact')} active={page==='contact'? true : false}>Contact</NavLink.Desktop>
             </HStack>
-            <Flex align="center" >
-              <IconButton onClick={toggleColorMode} icon={mode(<HiMoon />, <HiSun/>)}/>
-              <Box ml="5">
-                <MobileNav />
-              </Box>
-            </Flex>
-          </Flex>
-        </Box>
-      </Box>
+            <Box mr="5">
+              <MobileNav />
+            </Box>
+          <IconButton onClick={toggleColorMode} icon={mode(<HiMoon />, <HiSun/>)}/>
+        </Flex>
     </Box>
   )
 }
