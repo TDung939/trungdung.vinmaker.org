@@ -41,6 +41,10 @@ export const links = [
     title: 'Support',
     links: [
       {
+        label: 'VinMaker Society',
+        href: '#',
+      },
+      {
         label: 'Makers for Kindness',
         href: '#',
       },
