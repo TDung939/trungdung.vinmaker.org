@@ -1,9 +1,10 @@
 import * as React from 'react'
-import { FaAward, FaBaby, FaBicycle, FaChalkboard, FaDizzy, FaGraduationCap, FaPaperclip, FaPauseCircle, FaPlane, FaSchool, FaUserFriends } from 'react-icons/fa'
+import { FaAward, FaBaby, FaBicycle, FaChalkboard, FaDizzy, FaGraduationCap, FaHandsHelping, FaPaperclip, FaPauseCircle, FaPlane, FaRobot, FaSchool, FaTerminal, FaUserFriends } from 'react-icons/fa'
 import { Box, Heading, Icon, Collapse, Button } from '@chakra-ui/react'
 import { List } from './List'
 import { ListItem } from './ListItem'
 import { useState } from 'react'
+import {GiForearm} from 'react-icons/gi'
 
 export const ListWithVerticalLine = () => {
   const [show, setShow] = useState(false)
@@ -13,17 +14,26 @@ export const ListWithVerticalLine = () => {
   return (
     <Box as="section">
       <Collapse startingHeight='320px' in={show} >
-        <Heading fontSize='xl' my='4'>2020</Heading>
+        <Heading fontSize='xl' my='4'>2021</Heading>
         <List spacing="12">
           <ListItem
-            title="Came back to Vietnam"
-            // subTitle="Somehow I managed"
-            icon={<Icon as={FaPlane} boxSize="4" />}
+            title="Started at Vulcan Augmetics"
+            subTitle="Intern. Technical Support Engineer. Cool robotic hands."
+            icon={<Icon as={GiForearm} boxSize="4" />}
           />
+        </List>
+
+        <Heading fontSize='xl' my='4'>2020</Heading>
+        <List spacing="12">
           <ListItem
             title="Started at VinUniversity"
             // subTitle="I was planning to study in the US but eventually didn't go. Best decision I have ever made. I learned a lot this year."
             icon={<Icon as={FaSchool} boxSize="4" />}
+          />
+           <ListItem
+            title="Founded VinMaker Society"
+            subTitle="Might be a bit biased but this club is so cool"
+            icon={<Icon as={FaTerminal} boxSize="4" />}
           />
         </List>
 
@@ -31,22 +41,22 @@ export const ListWithVerticalLine = () => {
         <List spacing="12">
           <ListItem
             title="Landed First Internship"
-            subTitle="Loved the people, loved the work, hated the back pain from sitting 8 hours a day"
+            subTitle="Loved the people. Loved the work. Hated the back pain from sitting 8 hours a day"
             icon={<Icon as={FaPaperclip} boxSize="4" />}
           />
           <ListItem
             title="Became a Part-time Lecturer"
-            subTitle="Best way to make some money while having fun. I taught kids programming and building robots."
+            subTitle="Taught kids programming and building robots."
             icon={<Icon as={FaChalkboard} boxSize="4" />}
           />
           <ListItem
             title="Got into University of New South Wales, Sydney"
-            subTitle="The Engineering program is great and all, but I honestly just wanted to see kangaroos in person."
+            subTitle="Kangaroos, Koalas, and so... many... Flies"
             icon={<Icon as={FaSchool} boxSize="4" />}
           />
           <ListItem
             title="Joined the Engineering Society"
-            subTitle="Just great experiences overall. Made a lot of friends. Participated in many eye-opening projects. Fixed bicycles for free."
+            subTitle="Made friends. Fixed bicycles for free."
             icon={<Icon as={FaUserFriends} boxSize="4" />}
           />
         </List>
@@ -60,19 +70,11 @@ export const ListWithVerticalLine = () => {
           />
           <ListItem
             title="Took a gap year"
-            subTitle="I was planning to study in the US but eventually didn't go. Best decision I have ever made. I learned a lot this year."
+            subTitle="Travel. Work. Learn."
             icon={<Icon as={FaPauseCircle} boxSize="4" />}
           />
         </List>
 
-        <Heading fontSize='xl' my='4'>2007</Heading>
-        <List spacing="12">
-          <ListItem
-            title="Learned how to ride a bike"
-            subTitle="Successfully destroyed my parents' social lives"
-            icon={<Icon as={FaBicycle} boxSize="4" />}
-          />
-        </List>
         <Heading fontSize='xl' my='4'>2010</Heading>
         <List spacing="12">
           <ListItem

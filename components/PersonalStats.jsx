@@ -24,7 +24,7 @@ export default function PersonalStats() {
                         <Heading ml='2' fontSize='md'>Github</Heading>
                     </Flex>
                     
-                    {isLoading? <Spinner/> :
+                    {isLoading? <Spinner mt='2'/> :
                     <Box mt='2'>
                         <Text>{github.publicRepos} Public Repos</Text>
                         <Text>{github.followers} Followers</Text>

@@ -8,19 +8,19 @@ export const links = [
     links: [
       {
         label: 'Home',
-        href: '#',
+        href: '/',
       },
       {
         label: 'Projects',
-        href: '#',
+        href: '/projects',
       },
       {
         label: 'Blog',
-        href: '#',
+        href: '/blog',
       },
       {
         label: 'Contact',
-        href: '#',
+        href: '/contact',
       }
     ],
   },
@@ -42,7 +42,7 @@ export const links = [
     links: [
       {
         label: 'VinMaker Society',
-        href: '#',
+        href: 'https://vinmaker.org/',
       },
       {
         label: 'Makers for Kindness',

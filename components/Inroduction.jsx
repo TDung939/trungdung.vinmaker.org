@@ -1,4 +1,4 @@
-import { Flex, Box, Heading, Text, Button, HStack, Badge, Avatar, Wrap, useColorModeValue as mode, Center } from "@chakra-ui/react";
+import { Flex, Box, Heading, Text, Button, HStack, Badge, Avatar, Wrap, useColorModeValue as mode, Link } from "@chakra-ui/react";
 import { FaDownload } from "react-icons/fa";
 import Router from "next/router";
 import NowPlayingIntro from "./NowPlayingIntro";
@@ -25,8 +25,8 @@ export default function Introduction() {
                 
             </Flex>
             <HStack>
-                <Button onClick={() => Router.push('/projects')}>Explore Projects</Button>
-                <Button  bg='transparent' border={mode('2px solid black', '2px solid white')} leftIcon={<FaDownload/>}>Download Resume</Button>
+                <Button onClick={() => Router.push('/projects')}>See Projects</Button>
+                <Link href='/resume.pdf' isExternal><Button bg='transparent' border={mode('2px solid black', '2px solid white')} leftIcon={<FaDownload/>}>Resume</Button></Link>
             </HStack>
         </Box>
     )

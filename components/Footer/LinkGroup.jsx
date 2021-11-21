@@ -1,5 +1,6 @@
 import { Box, Stack, Text } from '@chakra-ui/react'
 import * as React from 'react'
+import Router from 'next/router'
 
 export const LinkGroup = (props) => {
   const { data } = props
@@ -28,8 +29,8 @@ export const LinkGroup = (props) => {
         {links.map((link, idx) => (
           <Box as="li" key={idx}>
             <Box
-              as="a"
-              href={link.href}
+              as="button"
+              onClick={() => Router.push(link.href)}
               _hover={{
                 textDecoration: 'underline',
               }}

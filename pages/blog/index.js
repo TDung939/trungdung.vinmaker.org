@@ -6,7 +6,20 @@ import usePosts from '../../lib/getposts';
 
 
 export default function Home() {
-    const { posts, isLoading, isError } = usePosts();
+  const { posts, isLoading, isError } = usePosts();
+  if (posts?.length == 0) return( <Box 
+    as='section' 
+    maxW='3xl' 
+    mx='auto'
+    px={{
+      base: '6',
+      lg:'8'
+    }}
+    >
+      <NavBar page='blog'/>
+      <Heading my='8'>No post yet!</Heading>
+      <Footer/>
+    </Box>)
   return (
     <Box 
     as='section' 

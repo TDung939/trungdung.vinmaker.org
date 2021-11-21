@@ -16,6 +16,7 @@
     "@prisma/client": "^3.5.0",
     "axios": "^0.24.0",
     "framer-motion": "^4.1.17",
+    "googleapis": "^91.0.0",
     "moment": "^2.29.1",
     "motion": "^10.4.0",
     "next": "12.0.4",
