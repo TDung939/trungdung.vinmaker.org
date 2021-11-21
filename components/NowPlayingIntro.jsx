@@ -8,7 +8,7 @@ const fetcher = url => axios.get(url).then(res => res.data)
 export default function NowPlayingIntro() {
   const { data } = useSWR('/api/now-playing', fetcher);
   return (
-    <Flex my='4' align={{base:'baseline', lg:'center'}} mb='6' direction={{base:'column', lg:'row'}} fontSize='sm'>
+    <Flex my='4' justify='center' mb='6'  fontSize='sm'>
 
       <svg viewBox="0 0 200 200" style={{height:'24px', width:'auto'}}>
         <path
