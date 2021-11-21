@@ -1,6 +1,4 @@
-import { PrismaClient } from '@prisma/client';
-
-let prisma = new PrismaClient();
+import prisma from '../../../lib/prisma'
 
 export default async function handler(req, res) {
 
@@ -23,19 +21,15 @@ export default async function handler(req, res) {
     });
   }
 
-//   if (!name || name !== entry.created_by) {
-//     return res.status(403).send('Unauthorized');
-//   }
+  if (req.method === 'DELETE') {
+    await prisma.posts.delete({
+      where: {
+        id: Number(id)
+      }
+    });
 
-//   if (req.method === 'DELETE') {
-//     await prisma.guestbook.delete({
-//       where: {
-//         id: Number(id)
-//       }
-//     });
-
-//     return res.status(204).json({});
-//   }
+    return res.status(204).json({});
+  }
 
 //   if (req.method === 'PUT') {
 //     const body = (req.body.body || '').slice(0, 500);

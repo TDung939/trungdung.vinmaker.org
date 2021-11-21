@@ -5,7 +5,7 @@ const DesktopNavLink = (props) => {
   const { active, ...rest } = props
   return (
     <chakra.a
-      href="#"
+      cursor='pointer'
       fontFamily='IBM Plex Mono'
       aria-current={active ? 'page' : undefined}
       fontSize='sm'

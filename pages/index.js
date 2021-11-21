@@ -5,7 +5,6 @@ import Introduction from '../components/Inroduction'
 import NavBar from '../components/NavBar/NavBar'
 import PersonalStats from '../components/PersonalStats'
 import Timeline from '../components/Timeline/Timeline'
-import { PrismaClient } from '.prisma/client'
 
 export default function Home() {
   return (
@@ -18,7 +17,7 @@ export default function Home() {
       lg:'8'
     }}
     >
-      <NavBar />
+      <NavBar page='home'/>
       <Introduction/>
       <FeaturedBlog />
       <PersonalStats/>

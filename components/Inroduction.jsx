@@ -1,12 +1,14 @@
-import { Flex, Box, Heading, Text, Button, HStack, Badge, Avatar, Wrap, useColorModeValue as mode } from "@chakra-ui/react";
+import { Flex, Box, Heading, Text, Button, HStack, Badge, Avatar, Wrap, useColorModeValue as mode, Center } from "@chakra-ui/react";
 import { FaDownload } from "react-icons/fa";
+import Router from "next/router";
+import NowPlayingIntro from "./NowPlayingIntro";
 
 export default function Introduction() {
 
     return (
         <Box>
             <Flex mt={{base:'2', lg:'8'}} justify='space-between' mx='auto' direction={{base:'column-reverse', lg:'row'}}>
-                <Box maxW='lg'>
+                <Box maxW='md'>
                     <Heading fontSize='2xl' my='4'>Nguyen Hoang Trung Dung</Heading>
                     <Wrap>
                         <Badge mr='2' bg='#2A5FFF20' border='2px solid #2A5FFF'>Student</Badge>
@@ -16,10 +18,14 @@ export default function Introduction() {
                     </Wrap>
                     <Text my='4'>I am an Electrical Engineering student at VinUniversity. I am the founder and president of VinMaker Society, the engineering society at VinUniversity. I mainly work with microcontrollers, but I also dabble in Web Development.</Text>
                 </Box>
-                <Avatar  border={mode('none', '3px solid #2A5FFF')} mt='4' size='2xl' src='https://github.com/TDung939.png'/>
+                <Flex justify='center' direction='column'>
+                    <Avatar mx='auto' border={mode('none', '3px solid #2A5FFF')} mt='4' size='2xl' src='https://github.com/TDung939.png'/>
+                    <NowPlayingIntro />
+                </Flex>
+                
             </Flex>
             <HStack>
-                <Button>Explore Projects</Button>
+                <Button onClick={() => Router.push('/projects')}>Explore Projects</Button>
                 <Button  bg='transparent' border={mode('2px solid black', '2px solid white')} leftIcon={<FaDownload/>}>Download Resume</Button>
             </HStack>
         </Box>

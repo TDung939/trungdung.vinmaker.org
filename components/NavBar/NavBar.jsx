@@ -11,10 +11,10 @@ import { MobileNav } from './MobileNav'
 import { NavLink } from './NavLink'
 import { HiMoon, HiSun } from 'react-icons/hi'
 import { useState } from 'react'
+import Router from 'next/router'
 
-export default function NavBar() {
-  const { colorMode, toggleColorMode } = useColorMode();
-  const [page, setPage] = useState('home')
+export default function NavBar({page}) {
+  const { toggleColorMode } = useColorMode();
 
   return (
     <Box as="header" bg='transparent' borderBottomWidth="1px" py="4">
@@ -26,10 +26,10 @@ export default function NavBar() {
               }}
               spacing="8"
             >
-              <NavLink.Desktop onClick={() => setPage('home')} active={page==='home'? true : false}>Home</NavLink.Desktop>
-              <NavLink.Desktop onClick={() => setPage('projects')} active={page==='projects'? true : false}>Projects</NavLink.Desktop>
-              <NavLink.Desktop onClick={() => setPage('blog')} active={page==='blog'? true : false}>Blog</NavLink.Desktop>
-              <NavLink.Desktop onClick={() => setPage('contact')} active={page==='contact'? true : false}>Contact</NavLink.Desktop>
+              <NavLink.Desktop onClick={() => Router.push('/')} active={page==='home'? true : false}>Home</NavLink.Desktop>
+              <NavLink.Desktop onClick={() => Router.push('/projects')} active={page==='projects'? true : false}>Projects</NavLink.Desktop>
+              <NavLink.Desktop onClick={() => Router.push('/blog')} active={page==='blog'? true : false}>Blog</NavLink.Desktop>
+              <NavLink.Desktop onClick={() => Router.push('/contact')} active={page==='contact'? true : false}>Contact</NavLink.Desktop>
             </HStack>
             <Box mr="5">
               <MobileNav />

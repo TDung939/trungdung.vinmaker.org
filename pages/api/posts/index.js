@@ -1,6 +1,4 @@
-import { PrismaClient } from '@prisma/client';
-
-let prisma = new PrismaClient();
+import prisma from "../../../lib/prisma";
 
 export default async function handler(req, res) {
   if (req.method === 'GET') {
@@ -21,13 +19,6 @@ export default async function handler(req, res) {
       }))
     );
   }
-
-//   const session = await getSession({ req });
-//   const { email, name } = session.user;
-
-//   if (!session) {
-//     return res.status(403).send('Unauthorized');
-//   }
 
   if (req.method === 'POST') {
     const newEntry = await prisma.posts.create({

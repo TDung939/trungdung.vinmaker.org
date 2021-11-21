@@ -1,8 +1,8 @@
-import { Box, Button, Text, Heading } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import { LoginForm } from '../../components/Admin/LoginForm'
-import NavBar from '../../components/NavBar/NavBar'
 import AuthContext from '../../context/AuthContext'
 import { useContext } from 'react'
+import Dashboard from '../../components/Admin/Dashboard'
 
 export default function Home() {
   const { user, logout } = useContext(AuthContext)
@@ -16,17 +16,7 @@ export default function Home() {
       lg:'8'
     }}
     >
-     {user? <Button onClick={() => logout()}>Log out</Button> : 
-     <>
-        <Box mt='12' mx="auto" textAlign='center'>
-            <Heading>You shall not pass! 🧙‍♂️</Heading>
-            <Text>without the correct password...</Text>
-        </Box>
-        <Box my='8' maxW='lg' mx='auto'>
-        <LoginForm/>
-        </Box>
-     </>
-     }
+     {user? <Dashboard/> : <LoginForm/>}
     </Box>
   )
 }

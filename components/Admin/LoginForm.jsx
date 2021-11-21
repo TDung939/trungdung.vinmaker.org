@@ -2,7 +2,7 @@ import AuthContext from '../../context/AuthContext'
 import * as React from 'react'
 
 import {
-  Button, chakra, Stack,
+  Button, chakra, Stack, Heading, Text,
   Box,
   Flex,
   FormControl,
@@ -34,6 +34,12 @@ export const LoginForm = (props) => {
   }
 
   return (
+    <Box>
+    <Box mt='12' mx="auto" textAlign='center'>
+    <Heading>You shall not pass! 🧙‍♂️</Heading>
+    <Text>without the correct password...</Text>
+</Box>
+<Box my='8' maxW='lg' mx='auto'>
   <chakra.form
     onSubmit={(e) => {
       e.preventDefault() // your login logic here
@@ -79,4 +85,6 @@ export const LoginForm = (props) => {
       </Button>
     </Stack>
   </chakra.form>
+  </Box>
+  </Box>
 )}
