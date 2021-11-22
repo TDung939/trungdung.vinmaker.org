@@ -1,5 +1,6 @@
 import { Box, chakra, Flex, Icon, useColorModeValue as mode } from '@chakra-ui/react'
 import * as React from 'react'
+import Router from 'next/router'
 
 const DesktopNavLink = (props) => {
   const { active, ...rest } = props
@@ -23,8 +24,8 @@ const MobileNavLink = (props) => {
   const { icon, children, href } = props
   return (
     <Flex
-      as="a"
-      href={href}
+      as='button'
+      onClick={() => Router.push(href)}
       m="-3"
       p="3"
       align="center"

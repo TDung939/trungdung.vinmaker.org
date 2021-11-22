@@ -1,28 +1,29 @@
 import {
   Box,
-  Button,
   Center,
   Flex,
   Portal,
   SimpleGrid,
   useBoolean,
   useFocusOnShow,
-  VStack,
   useColorModeValue as mode,
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import * as React from 'react'
 import FocusLock from 'react-focus-lock'
 import {
-  HiBookOpen,
-  HiCloudDownload,
-  HiCurrencyDollar,
+  HiHome,
+  HiNewspaper,
   HiOutlineMenu,
   HiOutlineX,
+  HiPhone,
   HiQuestionMarkCircle,
+  HiSparkles,
 } from 'react-icons/hi'
 import { RemoveScroll } from 'react-remove-scroll'
 import { NavLink } from './NavLink'
+import Router from 'next/router'
+
 const variants = {
   show: {
     display: 'revert',
@@ -128,7 +129,7 @@ export const MobileNav = () => {
         </RemoveScroll>
         <FocusLock disabled={!show} returnFocus>
           <Box
-            bg={mode('white', 'gray.700')}
+            bg={mode('white', '#161616')}
             shadow="lg"
             rounded="lg"
             ref={ref}
@@ -163,22 +164,11 @@ export const MobileNav = () => {
                   sm: 2,
                 }}
               >
-                <NavLink.Mobile icon={HiCloudDownload}>Product</NavLink.Mobile>
-                <NavLink.Mobile icon={HiCurrencyDollar}>Pricing</NavLink.Mobile>
-                <NavLink.Mobile icon={HiBookOpen}>Resources</NavLink.Mobile>
-                <NavLink.Mobile icon={HiQuestionMarkCircle}>Help</NavLink.Mobile>
+                <NavLink.Mobile href='/' icon={HiHome}>Home</NavLink.Mobile>
+                <NavLink.Mobile href='/projects' icon={HiSparkles}>Projects</NavLink.Mobile>
+                <NavLink.Mobile href='/blog' icon={HiNewspaper}>Blog</NavLink.Mobile>
+                <NavLink.Mobile href='/contact' icon={HiPhone}>Contact</NavLink.Mobile>
               </SimpleGrid>
-              <VStack mt="8" spacing="4">
-                <Button w="full" colorScheme="blue">
-                  Start Free Trial
-                </Button>
-                <Box textAlign="center" fontWeight="medium">
-                  Have an account?{' '}
-                  <Box as="a" color={mode('blue.600', 'blue.400')}>
-                    Log in
-                  </Box>
-                </Box>
-              </VStack>
             </Box>
           </Box>
         </FocusLock>
