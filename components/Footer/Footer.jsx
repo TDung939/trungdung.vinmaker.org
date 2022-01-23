@@ -123,7 +123,7 @@ export default function Footer() {
           </Stack>
           <Box maxW='sm'>
             <Text mt="2">
-              Built with <Link href='https://nextjs.org/' isExternal >Next.js</Link>, <Link href='https://chakra-ui.com/' isExternal >ChakraUI</Link>, and <Link href='https://www.prisma.io/' isExternal >Prisma</Link>. Feel free to <Link href='#' isExternal fontWeight='bold'>clone</Link> this project and build your own site <Heart/>
+              Built with <Link href='https://nextjs.org/' isExternal >Next.js</Link>, <Link href='https://chakra-ui.com/' isExternal >ChakraUI</Link>, and <Link href='https://www.prisma.io/' isExternal >Prisma</Link>. Feel free to <Link href='https://github.com/TDung939/trungdung.vinmaker.org' isExternal fontWeight='bold'>clone</Link> this project and build your own site <Heart/>
             </Text>
           </Box>
         </Flex>

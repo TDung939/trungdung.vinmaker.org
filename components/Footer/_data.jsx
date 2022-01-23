@@ -32,7 +32,7 @@ export const links = [
         href: 'https://soundcloud.com/trungdung939',
       },
       {
-        label: 'Free Life Tips',
+        label: 'Life Pro Tips',
         href: '#',
       }
     ],
@@ -44,13 +44,13 @@ export const links = [
         label: 'VinMaker Society',
         href: 'https://vinmaker.org/',
       },
-      {
-        label: 'Makers for Kindness',
-        href: '#',
-      },
+      // {
+      //   label: 'Makers for Kindness',
+      //   href: '#',
+      // },
       {
         label: 'Buy me a coffee',
-        href: '#',
+        href: 'https://www.buymeacoffee.com/trungdung',
       },
     ],
   }

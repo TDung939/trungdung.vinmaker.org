@@ -1,0 +1,112 @@
+
+.content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.content h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.content h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.content img {
+  width: 100%;
+}
+
+.content figcaption {
+  font-size: 12px;
+  line-height: 1.3;
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  text-align: center;
+  color: gray;
+}
+
+.content a {
+  transition: all 0.2s ease;
+  border-bottom: 2px solid #dde0e0;
+}
+
+.content a:hover {
+  transition: all 0.2s ease;
+  border-bottom: 2px solid #2A5FFF;
+}
+
+/* Blockquote
+–––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.content blockquote {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 12px 25px;
+  border-left: 5px solid #2A5FFF;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.content dl dt {
+  font-weight: var(--font-weight-primary-bold);
+  float: left;
+  clear: left;
+  overflow: hidden;
+  width: 180px;
+  margin-bottom: 1em;
+  text-align: right;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.content dl dd {
+  margin-bottom: 1em;
+  margin-left: 200px;
+}
+
+.content ul {
+  list-style: disc inside;
+}
+
+.content ol {
+  list-style: decimal inside;
+}
+
+.content ol,
+.content ul {
+  margin: 0 0 25px;
+  padding-left: 20px;
+}
+
+.content ul ul,
+.content ul ol,
+.content ol ol,
+.content ol ul {
+  font-size: 20px;
+  margin: 15px 0 15px 30px;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+
+/* TODO List */
+.todo-list {
+ list-style: none;
+}
+
+.content pre {
+  background-color: #161616;
+  border: 2px solid #2A5FFF;
+  padding: 18px;
+  border-radius: 20px;
+  font-family: ''Courier New', Courier, monospace';
+}

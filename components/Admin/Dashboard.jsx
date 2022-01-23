@@ -50,12 +50,31 @@ export default function Dashboard() {
 
     }
 
-      const { isOpen, onOpen, onClose } = useDisclosure()
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    
+    const modules = {
+        toolbar: [
+          [{ 'header': [1, 2, false] }],
+          ['bold', 'italic', 'underline','strike', 'blockquote', 'code-block'],
+          [{'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}],
+          ['link', 'image'],
+          ['clean']
+        ],
+      }
+    
+    const formats = [
+    'header',
+    'bold', 'italic', 'underline', 'strike', 'blockquote', 'code-block',
+    'list', 'bullet', 'indent',
+    'link', 'image'
+    ]
+    
+
   return (
       <Box my='12' >
            <Drawer onClose={onClose} isOpen={isOpen} size='full'>
                 <DrawerOverlay />
-                <DrawerContent>
+                <DrawerContent background={mode('white','#161616')}>
                 <DrawerHeader>
                     <Input 
                     placeholder='Title'
@@ -74,7 +93,7 @@ export default function Dashboard() {
                     onChange={e => setDescription(e.target.value)}
                     value={description}
                     />
-                    <ReactQuill theme="snow" value={content} onChange={setContent}/>
+                    <ReactQuill modules={modules} formats={formats} theme="snow" value={content} onChange={setContent}/>
                 </DrawerBody>
                 <DrawerFooter>
                     <Button onClick={() => handleSubmit()} mr='4'>Publish</Button>

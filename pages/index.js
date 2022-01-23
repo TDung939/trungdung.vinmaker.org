@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import FeaturedBlog from '../components/FeaturedBlog'
 import Footer from '../components/Footer/Footer'
-import Introduction from '../components/Inroduction'
+import Introduction from '../components/Introduction'
 import NavBar from '../components/NavBar/NavBar'
 import PersonalStats from '../components/PersonalStats'
 import Timeline from '../components/Timeline/Timeline'
