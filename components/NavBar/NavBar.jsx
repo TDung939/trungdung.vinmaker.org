@@ -28,7 +28,7 @@ export default function NavBar({page}) {
             >
               <NavLink.Desktop onClick={() => Router.push('/')} active={page==='home'? true : false}>Home</NavLink.Desktop>
               <NavLink.Desktop onClick={() => Router.push('/projects')} active={page==='projects'? true : false}>Projects</NavLink.Desktop>
-              <NavLink.Desktop onClick={() => Router.push('/blog')} active={page==='blog'? true : false}>Blog</NavLink.Desktop>
+              {/* <NavLink.Desktop onClick={() => Router.push('/blog')} active={page==='blog'? true : false}>Blog</NavLink.Desktop> */}
               <NavLink.Desktop onClick={() => Router.push('/contact')} active={page==='contact'? true : false}>Contact</NavLink.Desktop>
             </HStack>
             <Box mr="5">

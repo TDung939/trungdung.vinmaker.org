@@ -15,10 +15,6 @@ export const links = [
         href: '/projects',
       },
       {
-        label: 'Blog',
-        href: '/blog',
-      },
-      {
         label: 'Contact',
         href: '/contact',
       }
@@ -42,16 +38,12 @@ export const links = [
     links: [
       {
         label: 'VinMaker Society',
-        href: 'https://vinmaker.org/',
+        href: 'https://www.facebook.com/vinmakersoc/',
       },
       // {
       //   label: 'Makers for Kindness',
       //   href: '#',
       // },
-      {
-        label: 'Buy me a coffee',
-        href: 'https://www.buymeacoffee.com/trungdung',
-      },
     ],
   }
 ]

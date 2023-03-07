@@ -37,13 +37,13 @@ const ProjectCard = ({id, imageSrc, title, url, description}) => {
 
 const data = [
   {
-    title:'VinUni Makerspace Network',
+    title:'VinUni Makerspace Network (Fullstack)',
     url: 'https://makerspaces.vinmaker.org/',
     description: "A one-stop learning hub for VinUniversity's many makerspaces and labs with unlimited resources, information, and training modules. Members come here to get info about the makerspaces, get trained, and book machines to use for their projects.",
     imageSrc: 'https://res.cloudinary.com/dpec7wjtk/image/upload/v1642935353/myPortfolio-website/Screen_Shot_2022-01-23_at_17.54.11_goacnx.png'
   },
   {
-    title:'VinUni Research Bootcamp',
+    title:'VinUni Research Bootcamp (Fullstack)',
     url: 'https://www.vinuniresearchbootcamp.org/',
     description: "VRB is an online one-week immersive event for students to spend a week focused on learning the researching skills they’ve always wanted to tackle. I created a custom Event Management System, which (IMHO) makes hosting this online event more tolerable.",
     imageSrc: 'https://res.cloudinary.com/dpec7wjtk/image/upload/v1642933979/myPortfolio-website/vinuni-research-bootcamp_clovfh.png'
@@ -70,7 +70,7 @@ const data = [
   },
 
   {
-    title:'VinMagazine',
+    title:'VinMagazine (Frontend)',
     url: 'https://vinmag.co/',
     description: 'I designed and developed the website for VinMagazine, a media platform founded by VinUniversity students to create a space for Vietnamese youths to share their creations, ideas, and perspectives on their own terms.',
     imageSrc: 'https://res.cloudinary.com/dpec7wjtk/image/upload/v1642934965/myPortfolio-website/Screen_Shot_2022-01-23_at_17.48.20_zz7oep.png'

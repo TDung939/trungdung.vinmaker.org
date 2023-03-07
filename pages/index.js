@@ -19,7 +19,7 @@ export default function Home() {
     >
       <NavBar page='home'/>
       <Introduction/>
-      <FeaturedBlog />
+      {/* <FeaturedBlog /> */}
       <PersonalStats/>
       <Timeline />
       <Footer/>

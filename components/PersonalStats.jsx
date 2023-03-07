@@ -2,7 +2,7 @@ import { Box, Heading, Text, useColorModeValue as mode, SimpleGrid, Spinner, Fle
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { useEffect, useState } from "react";
 import useGithub from "../lib/github";
-import { FaBook, FaCog, FaGithub, FaGoodreads, FaProcedures, FaReact, FaRProject } from "react-icons/fa";
+import { FaBook, FaCog, FaGithub, FaGlobe, FaGlobeAsia, FaGoodreads, FaProcedures, FaReact, FaRProject } from "react-icons/fa";
 
 export default function PersonalStats() {
     const { github, isLoading, isError } = useGithub();
@@ -32,34 +32,35 @@ export default function PersonalStats() {
                     </Box>
                     }
                 </Box>
-                {/* <Box border='4px solid #2a5fff'  maxWidth='200px' rounded='xl' p='4'>
+                <Box border='4px solid #2a5fff'  maxWidth='200px' rounded='xl' p='4'>
                     <Flex>
-                        <FaGoodreads/> 
-                        <Heading ml='2' fontSize='md'>Github</Heading>
+                        <FaBook/>
+                        <Heading ml='2' fontSize='md'>Books Read</Heading>
                     </Flex>
                     
                     {isLoading? <Spinner/> :
                     <Box mt='2'>
-                        <Text>{github.publicRepos} Public Repos</Text>
-                        <Text>{github.followers} Followers</Text>
-                        <Text>{github.following} Following</Text>
+                        <Text>8 Fiction</Text>
+                        <Text>4 Non-fiction</Text>
+                        <Text>3 Self-help</Text>
                     </Box>
                     }
                 </Box>
                 <Box border='4px solid #2a5fff'  maxWidth='200px' rounded='xl' p='4'>
                     <Flex>
-                        <FaReact/> 
-                        <Heading ml='2' fontSize='md'>Github</Heading>
+                        <FaGlobeAsia/> 
+                        <Heading ml='2' fontSize='md'>Traveled</Heading>
                     </Flex>
                     
                     {isLoading? <Spinner/> :
                     <Box mt='2'>
-                        <Text>{github.publicRepos} Public Repos</Text>
-                        <Text>{github.followers} Followers</Text>
-                        <Text>{github.following} Following</Text>
+                        <Text>6 Countries</Text>
+                        <Text>11 Cities</Text>
+                        <Text>8 Mountain Climbed</Text>
                     </Box>
                     }
-                </Box> */}
+                </Box>
+                
             </SimpleGrid>
         </Box>
     )

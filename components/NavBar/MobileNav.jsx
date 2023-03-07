@@ -166,7 +166,7 @@ export const MobileNav = () => {
               >
                 <NavLink.Mobile href='/' icon={HiHome}>Home</NavLink.Mobile>
                 <NavLink.Mobile href='/projects' icon={HiSparkles}>Projects</NavLink.Mobile>
-                <NavLink.Mobile href='/blog' icon={HiNewspaper}>Blog</NavLink.Mobile>
+                {/* <NavLink.Mobile href='/blog' icon={HiNewspaper}>Blog</NavLink.Mobile> */}
                 <NavLink.Mobile href='/contact' icon={HiPhone}>Contact</NavLink.Mobile>
               </SimpleGrid>
             </Box>

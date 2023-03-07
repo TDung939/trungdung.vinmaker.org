@@ -16,7 +16,7 @@ export default function Introduction() {
                         <Badge mr='2' bg='#66DE9320' border='2px solid #66DE93'>Traveller</Badge>
                         <Badge bg='#F7EA0020' border='2px solid #F7EA00'>Dog Lover</Badge>
                     </Wrap>
-                    <Text my='4'>I am an Electrical Engineering student at VinUniversity. I am the founder and president of VinMaker Society, the engineering society at VinUniversity. I mainly work with microcontrollers, but I also dabble in Web Development.</Text>
+                    <Text my='4'>I am an Electrical Engineering student at VinUniversity. I mainly work with microcontrollers, but I also dabble in Web Development.</Text>
                 </Box>
                 <Flex justify='center' direction='column'>
                     <Avatar mx='auto' border={mode('none', '3px solid #2A5FFF')} mt='4' size='2xl' src='https://github.com/TDung939.png'/>
