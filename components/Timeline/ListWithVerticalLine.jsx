@@ -4,7 +4,7 @@ import { Box, Heading, Icon, Collapse, Button } from '@chakra-ui/react'
 import { List } from './List'
 import { ListItem } from './ListItem'
 import { useState } from 'react'
-import {GiForearm} from 'react-icons/gi'
+import {GiForearm, GiGuitar, GiGuitarHead, GiLabCoat, GiMadScientist, GiMicroscope} from 'react-icons/gi'
 
 export const ListWithVerticalLine = () => {
   const [show, setShow] = useState(false)
@@ -14,6 +14,23 @@ export const ListWithVerticalLine = () => {
   return (
     <Box as="section">
       <Collapse startingHeight='320px' in={show} >
+
+        <Heading fontSize='xl' my='4'>2022</Heading>
+        <List spacing="12">
+          <ListItem
+            title="Research Assistant at VinUni-Illinois Smart Health Center"
+            subTitle="Designed and built a low-cost and remote-controlled sampler device with Google Spreadsheets as an alternative
+            to ISCO 3700 Waste Water Sampler"
+            icon={<Icon as={GiMicroscope} boxSize="4" />}
+          />
+           <ListItem
+            title="Formed a Indie rock Band"
+            subTitle="Disband after one song"
+            icon={<Icon as={GiGuitarHead} boxSize="4" />}
+          />
+        </List>
+
+
         <Heading fontSize='xl' my='4'>2021</Heading>
         <List spacing="12">
           <ListItem
@@ -27,7 +44,6 @@ export const ListWithVerticalLine = () => {
         <List spacing="12">
           <ListItem
             title="Started at VinUniversity"
-            // subTitle="I was planning to study in the US but eventually didn't go. Best decision I have ever made. I learned a lot this year."
             icon={<Icon as={FaSchool} boxSize="4" />}
           />
            <ListItem

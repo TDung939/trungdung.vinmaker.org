@@ -35,14 +35,14 @@ export default function PersonalStats() {
                 <Box border='4px solid #2a5fff'  maxWidth='200px' rounded='xl' p='4'>
                     <Flex>
                         <FaBook/>
-                        <Heading ml='2' fontSize='md'>Books Read</Heading>
+                        <Heading ml='2' fontSize='md'>2022 Books Read</Heading>
                     </Flex>
                     
                     {isLoading? <Spinner/> :
                     <Box mt='2'>
-                        <Text>8 Fiction</Text>
-                        <Text>4 Non-fiction</Text>
-                        <Text>3 Self-help</Text>
+                        <Text>5 Fiction</Text>
+                        <Text>2 Non-fiction</Text>
+                        <Text>1 Self-help</Text>
                     </Box>
                     }
                 </Box>
@@ -56,7 +56,7 @@ export default function PersonalStats() {
                     <Box mt='2'>
                         <Text>6 Countries</Text>
                         <Text>11 Cities</Text>
-                        <Text>8 Mountain Climbed</Text>
+                        <Text>2 Mountain Climbed</Text>
                     </Box>
                     }
                 </Box>
