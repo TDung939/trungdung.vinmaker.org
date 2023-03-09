@@ -52,32 +52,31 @@ const ProjectCard = ({id, imageSrc, title, url, description}) => {
 
 const dataWeb = [
   {
-    title:'VinMaker Portal (Fullstack)',
-    url: 'https://vinmaker.org/',
-    description: "https://fb.watch/j6E-dGJKN3/ Our new website portal, which has been designed to personalize membership experience. Personal dashboard, Active community forum, One-click register for future events",
-    imageSrc: 'https://res.cloudinary.com/dpec7wjtk/image/upload/v1642935353/myPortfolio-website/Screen_Shot_2022-01-23_at_17.54.11_goacnx.png'
+    title:'VinMaker Portal Demo',
+    url: 'https://demo-vinmaker.netlify.app/',
+    description: "Our new website portal, which has been designed to personalize membership experience. Personal dashboard, Active community forum, One-click register for future events",
+    imageSrc: 'https://res.cloudinary.com/dpec7wjtk/image/upload/v1678340874/myPortfolio-website/Screen_Shot_2023-03-09_at_12.46.39_p0vwuv.png'
   },
   
   {
-    title:'VinUni Makerspace Network (Fullstack)',
-    url: 'https://makerspaces.vinmaker.org/',
-    description: "A one-stop learning hub for VinUniversity's many makerspaces and labs with unlimited resources, information, and training modules. Members come here to get info about the makerspaces, get trained, and book machines to use for their projects.",
-    imageSrc: 'https://res.cloudinary.com/dpec7wjtk/image/upload/v1642935353/myPortfolio-website/Screen_Shot_2022-01-23_at_17.54.11_goacnx.png'
-  },
-  {
-    title:'VinUni Research Bootcamp (Fullstack)',
-    url: 'https://www.vinuniresearchbootcamp.org/',
+    title:'VinUni Research Bootcamp',
+    url: 'https://vinuniresearchbootcamp.netlify.app/',
     description: "VRB is an online one-week immersive event for students to spend a week focused on learning the researching skills they’ve always wanted to tackle. I created a custom Event Management System, which (IMHO) makes hosting this online event more tolerable.",
     imageSrc: 'https://res.cloudinary.com/dpec7wjtk/image/upload/v1642933979/myPortfolio-website/vinuni-research-bootcamp_clovfh.png'
   },
 
   {
-    title:'VinMagazine (Frontend)',
-    url: 'https://vinmag.co/',
+    title:'VinMagazine',
+    url: 'https://demo-vinmag.netlify.app/',
     description: 'I designed and developed the website for VinMagazine, a media platform founded by VinUniversity students to create a space for Vietnamese youths to share their creations, ideas, and perspectives on their own terms.',
     imageSrc: 'https://res.cloudinary.com/dpec7wjtk/image/upload/v1642934965/myPortfolio-website/Screen_Shot_2022-01-23_at_17.48.20_zz7oep.png'
   },
-  
+  {
+    title:'Whack-A-Mole',
+    url: 'https://vinmakersoc.github.io/nose-whack-posenet/',
+    description: "A Whack-A-Mole inspired game but play with your nose instead, made with posenet",
+    imageSrc: 'https://res.cloudinary.com/dpec7wjtk/image/upload/v1678354887/myPortfolio-website/Screen_Shot_2023-03-09_at_16.40.17_cvksur.png'
+  },
 ]
 
 

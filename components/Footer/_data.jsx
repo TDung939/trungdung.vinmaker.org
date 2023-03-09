@@ -56,7 +56,7 @@ export const socialLinks = [
   {
     label: 'LinkedIn',
     icon: <FaLinkedin />,
-    href: 'https://www.linkedin.com/in/dung-nht/',
+    href: 'https://www.linkedin.com/in/nguyenhoangtrungdung/',
   },
   {
     label: 'Github',
